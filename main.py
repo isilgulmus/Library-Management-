@@ -50,21 +50,18 @@ class Library:
         else:
             print("Book not found.")
 
-# Create an object named "lib" with "Library" class
+
 lib = Library()
 
-# Menu
+
 while True:
     print("\n*** MENU ***")
     print("1) List Books")
     print("2) Add Book")
     print("3) Remove Book")
     print("Q) Exit")
-
-    # Ask user input for menu item and assign the input to a variable
     choice = input("Enter your choice (1-3 or Q): ")
 
-    # Using if-elif-else statement check the user input
     if choice == "1":
         lib.list_books()
     elif choice == "2":
